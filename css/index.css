@@ -408,6 +408,34 @@ main .section5 .see-all{
     justify-content: center;
 }
 
+main .section6{
+    width: calc(100% + 110px);
+    position: relative;
+    left: -90px;
+    background: #101010;
+    display: flex;
+    color: #fff;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    padding: 60px 50px 60px 0px;
+    padding-left: 120px;
+}
+main .section6 .box{
+    width: 31.3%;
+    margin: 1%;
+    background: #202020;
+    border-radius: 10px;
+    padding: 30px;
+}
+main .section6 .box h1{
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: rgb(230, 230, 230);
+}
+main .section6 .box p{
+    color: #909090;
+}
+
 
 @media (max-width: 1130px){
     nav{
@@ -713,5 +741,20 @@ main .section5 .see-all{
     }
     main .section5 .projects-grid .project p{
         font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px){
+    main .section6{
+        padding: 60px 20px 60px 90px;
+    }
+    main .section6 .box{
+        width: 48%;
+    }
+}
+@media (max-width: 720px){
+    main .section6 .box{
+        width: 98%;
+        margin: 10px 0px 10px 0px;
     }
 }
