@@ -458,6 +458,41 @@ main .section7 .language p span{
 }
 
 
+main .section8{
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+main .section8 .swiper-slide{
+    width: 80%;
+}
+main .section8 img{
+    width: 100%;
+}
+main .section8 .title{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+main .section8 .title span{
+    color: var(--color1);
+}
+main .section8 .mySwiper1{
+    display: none;
+}
+main .section8 .mySwiper2{
+    display: none;
+}
+main .section8 .mySwiper3{
+    display: none;
+}
+main .section8 .mySwiper4{
+    display: none;
+}
+
+
 @media (max-width: 1130px){
     nav{
         display: none;
@@ -821,5 +856,39 @@ main .section7 .language p span{
         margin-left: -60px;
         width: 120px;
         border-radius: 8px;
+    }
+}
+
+
+@media (max-width: 1420px){
+    main .section8 .mySwiper{
+        display: none;
+    }
+    main .section8 .mySwiper1{
+        display: block;
+    }
+}
+@media (max-width: 1200px){
+    main .section8 .mySwiper1{
+        display: none;
+    }
+    main .section8 .mySwiper2{
+        display: block;
+    }
+}
+@media (max-width: 850px){
+    main .section8 .mySwiper2{
+        display: none;
+    }
+    main .section8 .mySwiper3{
+        display: block;
+    }
+}
+@media (max-width: 590px){
+    main .section8 .mySwiper3{
+        display: none;
+    }
+    main .section8 .mySwiper4{
+        display: block;
     }
 }
