@@ -436,6 +436,27 @@ main .section6 .box p{
     color: #909090;
 }
 
+main .section7{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+    flex-wrap: wrap;
+}
+main .section7 .language{
+    width: 20%;
+}
+main .section7 .language img{
+    width: 160px;
+    border-radius: 20px;
+}
+main .section7 .language p{
+    font-size: 18px;
+}
+main .section7 .language p span{
+    font-weight: 600;
+}
+
 
 @media (max-width: 1130px){
     nav{
@@ -756,5 +777,49 @@ main .section6 .box p{
     main .section6 .box{
         width: 98%;
         margin: 10px 0px 10px 0px;
+    }
+}
+
+@media (max-width: 1030px){
+    main .section7 .language{
+        width: 25%;
+        margin: 30px 0px 30px 0px;
+    }
+    main .section7 .language img{
+        position: relative;
+        left: 50%;
+        margin-left: -60px;
+        width: 120px;
+        border-radius: 8px;
+    }
+    main .section7 .language h1{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    main .section7 .language p{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 720px){
+    main .section7 .language{
+        width: 50%;
+    }
+    main .section7 .language img{
+        position: relative;
+        left: 50%;
+        margin-left: -90px;
+        width: 180px;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 500px){
+    main .section7 .language img{
+        position: relative;
+        left: 50%;
+        margin-left: -60px;
+        width: 120px;
+        border-radius: 8px;
     }
 }
