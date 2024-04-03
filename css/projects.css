@@ -1,0 +1,300 @@
+/* NAV */
+nav{
+    width: 50px;
+    margin: 0px 20px 0px 20px;
+    height: calc(80% - 80px);
+    position: fixed;
+    top: 10%;
+    background: var(--color1);
+    border-radius: 1000px;
+}
+nav .to-top{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -80px;
+    color: #fff;
+    background: var(--color1);
+    font-size: 26px;
+}
+nav .menu{
+    width: 100%;
+    height: 14.285%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+}
+.to-top-burger{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: var(--color1);
+    font-size: 26px;
+}
+
+/* SCROLLBAR STYLE */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* BURGER MENU */
+.active-burger-menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 45px;
+    display: none;
+    cursor: pointer;
+}
+.burger-menu{
+    width: 320px;
+    height: calc(100vh - 40px);
+    position: fixed;
+    top: 20px;
+    right: -320px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .5s;
+}
+.burger-menu .menu{
+    width: 96%;
+    position: relative;
+    left: 2%;
+    margin: 10px 0px 10px 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: .5s;
+    border-radius: 5px;
+}
+.burger-menu .menu:hover{
+    background: rgb(240, 240, 240);
+}
+.burger-menu .menu i{
+    margin-right: 20px;
+    font-size: 22px;
+}
+.burger-menu .close-menu{
+    font-size: 40px;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+.burger-menu .close-menu i{
+    width: 100%;
+    text-align: right;
+}
+.burger-menu-blur{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: #20202027;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+main{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    padding-left: 90px;
+}
+hr{
+    margin-bottom: 30px;
+}
+/* SECTION 1 */
+main .section1{
+    width: 94%;
+    position: relative;
+    color: #101010;
+    left: 4%;
+    padding-top: 50px;
+}
+main .section1 .title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+main .section1 .title span{
+    color: var(--color1);
+}
+main .section1 .categories{
+    display: flex;
+    margin: 20px 0px 20px 0px;
+    flex-wrap: wrap;
+}
+main .section1 .categories .category{
+    padding: 0px 20px 0px 20px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    font-weight: 400;
+    border: solid 1px #101010;
+    margin: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+main .section1 .categories .category:hover{
+    border: 1px solid var(--color1);
+}
+main .section1 .categories #active{
+    background: var(--color1);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+main .section1 .projects-grid{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+main .section1 .projects-grid .project{
+    width: 24%;
+    margin: .5%;
+    padding-bottom: 60px;
+    position: relative;
+}
+main .section1 .projects-grid .project h1{
+    font-size: 20px;
+}
+main .section1 .projects-grid .project p{
+    font-size: 16px;
+}
+main .section1 .projects-grid .project:first-child{
+    margin-left: unset;
+}
+main .section1 .projects-grid .project:last-child{
+    margin-right: unset;
+}
+main .section1 .projects-grid .project img{
+    width: 100%;
+}
+main .section1 .projects-grid .project .icons{
+    display: flex;
+    margin: 10px 0px 5px 0px;
+}
+main .section1 .projects-grid .project .icons .icon{
+    margin: 0px 6px 0px 6px;
+}
+main .section1 .projects-grid .project .icons .icon img{
+    width: 24px;
+}
+main .section1 .projects-grid .project .view-more{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0px;
+    background: var(--color1);
+}
+main .section1 .see-all{
+    height: 46px;
+    width: 360px;
+    border-radius: 1000px;
+    background: #101010;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    margin: 20px 0px 0px 0px;
+    margin-left: -180px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #101010;
+    color: #fff;
+}
+footer p span{
+    color: var(--color1);
+}
+
+/* RESPONSIVITY SECTION 5*/
+@media (max-width: 1420px){
+    main .section1 .projects-grid .project h1{
+        font-size: 18px;
+    }
+    main .section1 .projects-grid .project p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1200px){
+    main .section1 .projects-grid .project{
+        width: 49%;
+        margin-top: 20px;
+    }
+    main .section1 .projects-grid .project h1{
+        font-size: 24px;
+    }
+    main .section1 .projects-grid .project p{
+        font-size: 18px;
+        margin: 5px 0px 10px 0px;
+    }
+}
+@media (max-width: 830px){
+    main .section1 .projects-grid .project h1{
+        font-size: 20px;
+    }
+    main .section1 .projects-grid .project p{
+        font-size: 16px;
+    }
+    main .section1 .projects-grid .project .icons .icon img{
+        width: 18px;
+    }
+}
+@media (max-width: 560px){
+    main .section1 .projects-grid .project h1{
+        font-size: 18px;
+    }
+    main .section1 .projects-grid .project p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 490px){
+    main .section1 .projects-grid .project{
+        width: 99%;
+    }
+    main .section1 .projects-grid .project h1{
+        font-size: 24px;
+    }
+    main .section1 .projects-grid .project p{
+        font-size: 18px;
+    }
+}

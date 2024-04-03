@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diovani de Oliveira</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="section1" id="section1">
+            <h1 class="title">All Projects (1)</h1>
+            <hr>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="../images/portfolio.png" alt="" class="image-project">
+                    <div class="icons">
+                        <div class="icon"><img src="../images/programmingLanguage1.png" alt=""></div>
+                        <div class="icon"><img src="../images/programmingLanguage2.png" alt=""></div>
+                        <div class="icon"><img src="../images/programmingLanguage3.png" alt=""></div>
+                        <div class="icon"><img src="../images/programmingLanguage4.png" alt=""></div>
+                    </div>
+                    <h1></h1>
+                    <p></p>
+                    <a href="./project.html"><div class="view-more">View More</div></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav>
+        <a href="../index.html#section1"><div class="menu"><i class='bx bx-home-alt-2'></i></div></a>
+        <a href="../index.html#section2"><div class="menu"><i class='bx bx-info-circle' ></i></div></a>
+        <a href="../index.html#section3"><div class="menu"><i class='bx bx-code-alt' ></i></div></a>
+        <a href="../index.html#section4"><div class="menu"><i class='bx bx-line-chart' ></i></div></a>
+        <a href="../index.html#section5"><div class="menu"><i class='bx bx-grid-alt' ></i></div></a>
+        <a href="../index.html#section6"><div class="menu"><i class='bx bx-message-dots'></i></div></a>
+        <a href="../index.html#section7"><div class="menu"><i class='bx bx-medal' ></i></div></a>
+        <a href="#"><div class="to-top">
+            <i class='bx bxs-up-arrow' ></i>
+        </div></a>
+    </nav>
+    <div class="active-burger-menu" onclick="openMenu()">
+        <i class='bx bx-menu'></i>
+    </div>
+    <div class="burger-menu-blur"></div>
+    <div class="burger-menu">
+        <div class="close-menu" onclick="closeMenu()"><i class='bx bx-x' ></i></div>
+        <a href="../index.html#section1"><div class="menu"><i class='bx bx-home-alt-2'></i>Home</div></a>
+        <a href="../index.html#section2"><div class="menu"><i class='bx bx-info-circle' ></i>About Me</div></a>
+        <a href="../index.html#section3"><div class="menu"><i class='bx bx-code-alt' ></i>Programming Langugages</div></a>
+        <a href="../index.html#section4"><div class="menu"><i class='bx bx-line-chart' ></i>My Timeline</div></a>
+        <a href="../index.html#section5"><div class="menu"><i class='bx bx-grid-alt' ></i>Projects</div></a>
+        <a href="../index.html#section6"><div class="menu"><i class='bx bx-message-dots'></i>Languages</div></a>
+        <a href="../index.html#section7"><div class="menu"><i class='bx bx-medal' ></i>Courses and Certifications</div></a>
+    </div>
+    <a href="#"><div class="to-top-burger">
+        <i class='bx bxs-up-arrow' ></i>
+    </div></a>
+    <script>
+        let blurMenu = document.querySelector('.burger-menu-blur');
+        let burgerMenu = document.querySelector('.burger-menu');
+        function openMenu(){
+            blurMenu.style.display = 'block';
+            burgerMenu.style.right = '0px';
+        }
+        function closeMenu(){
+            blurMenu.style.display = 'none';
+            burgerMenu.style.right = '-320px';
+        }
+    </script>
+</body>
+</html>
